@@ -1,7 +1,7 @@
 import "./app.css";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import { useEffect, useState } from "react";
-import { Room, Star, StarBorder } from "@material-ui/icons";
+import { Room, Star } from "@material-ui/icons";
 import axios from "axios";
 import { format } from "timeago.js";
 import Register from "./components/Register";
@@ -78,7 +78,7 @@ function App() {
     <div style={{ height: "100vh", width: "100%" }}>
       <ReactMapGL
         {...viewport}
-        mapboxApiAccessToken=""
+        mapboxApiAccessToken="pk.eyJ1IjoicHJhdGlrLTAwMDgiLCJhIjoiY2wzN2VlMTBnMDk4eDNqbnRzeDI5aWRiNyJ9.KWWrtpmgblbtxSEOWhjpMw"
         width="100%"
         height="100%"
         transitionDuration="200"
